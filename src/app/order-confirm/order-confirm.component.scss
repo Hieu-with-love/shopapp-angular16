@@ -1,0 +1,18 @@
+.intro-section {
+    text-align: center;
+    padding: 20px;
+}
+.product-container {
+    background-color: #f8f9fa; /* Màu nền nhạt để tạo sự tương phản */
+    padding: 10px;            /* Khoảng cách giữa nội dung và viền */
+    border-radius: 5px;       /* Bo tròn các góc để tạo cảm giác mềm mại */
+    display: flex;            /* Hiển thị nội dung theo hàng ngang */
+    align-items: center;      /* Căn giữa hình ảnh và văn bản theo chiều dọc */
+    gap: 10px;                /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;       /* Bo tròn góc của hình ảnh để phù hợp với container */
+}

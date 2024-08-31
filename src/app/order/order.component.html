@@ -1,0 +1,86 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="intro-section">
+        <h1>Đây là trang order</h1>
+        <p>Sử dụng Bootstrap</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-control">
+                <h2 class="product-header">Thông tin người nhận</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Số điện thoại</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Danh sách đơn hàng người nhận</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Tổng giá</th>
+                        <th scope="col">Ảnh sản phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Laptop</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>100$</td>
+                        <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" 
+                                style="width: 100px; height: auto;">
+                      </tr>
+                      <tr>
+                        <th scope="row">Iphone</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>100$</td>
+                        <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" 
+                                style="width: 100px; height: auto;">
+                      </tr>
+                      <tr>
+                        <th scope="row">Macbook</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>100$</td>
+                        <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" 
+                                style="width: 100px; height: auto;">
+                      </tr>
+                </tbody>
+                <div class="text-start mt-3">
+                    <h4 class="text-end">Tổng tiền: 300$</h4>
+                </div>
+                <div class="row mt-3">
+                    <h4>Nhập coupon</h4>
+                    <div class="form-control">
+                        <input type="text" class="form-control col-lg-6" placeholder="Nhập coupon để nhận giảm giá">
+                        <div class="btn btn-secondary col-lg-6">
+                            Xác nhận coupon
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-success mt-4">
+                    Mua hàng
+                </div>
+            </table>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
