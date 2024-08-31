@@ -1,1 +1,52 @@
-<p>login works!</p>
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-login mx-auto">
+                <h2>Đăng nhập</h2>
+                <div class="form-group">
+                    <label for="" class="mb-2">Email/Phone</label>
+                    <input type="text" class="form-control" id="email">
+                    <div class="divider-nospace"></div>
+                </div>
+                <div class="mt-2">
+                    <div class="form-group password-field">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" placeholder="Ít nhất 3 ký tự" class="form-control" id="password">
+                        <i class="fa-solid fa-eye-slash password-toggle"></i>
+                        <div class="divider-nospace"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check checkbox-text">
+                        <span style="display: flex;">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label text-start" for="remember">Ghi nhớ đăng nhập</label>
+                            <a href="#" class="register-link text-end">Quên mật khẩu</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select class="form-control access-right">
+                        <option selected disabled>Quyền đăng nhập</option>
+                        <option>Người dùng</option>
+                        <option>Quản trị viên</option>
+                    </select>
+                    <button type="button" class="login-button btn btn-primary my-3">
+                        Đăng nhập
+                    </button>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <p class="col-6 ">Bạn chưa có tài khoản?</p>
+                            <a href="" class="col-6 register-link">Tạo tài khoản</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>
