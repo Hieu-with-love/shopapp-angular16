@@ -1,18 +1,90 @@
 <app-header></app-header>
 
-<div class="container">
-    <div class="row form-control">
-        <h2>Đăng ký tài khoản</h2>
-        <div>
-            <label for="">Đăng ký bằng email/số điện thoại</label>
-            <input type="text" class="form-control">
-        </div>
-        <div>
-            <label for="">Mật khẩu</label>
-            <input type="text" class="form-control">
-            <div></div>
+<div id="wrapper">
+    <div class="container">
+        <div class="row justify-content-around">
+            <form action="" class="col-md-6 bg-light bg-gradient p-3 my-3">
+                <h1 class="text-center text-uppercase h3 py-3">Đăng ký tài khoản</h1>
+                <div class="form-group my-2">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text"
+                        [(ngModel)] = "phone" 
+                        (input)= "onPhoneChange()"
+                        [ngModelOptions]="{standalone: true}"
+                        placeholder="Nhập số điện thoại"
+                            id="phone" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group my-2">
+                    <label for="password">Mật khẩu</label>
+                    <input type="text"
+                            [(ngModel)] = "password" 
+                            (input)= "onPasswordChange()"
+                            [ngModelOptions]="{standalone: true}"
+                            placeholder="Ít nhất 3 ký tự"
+                            id="password" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group my-2">
+                    <label for="retyPassword">Nhập lại mật khẩu</label>
+                    <input type="text"
+                            [(ngModel)] = "retypePasword" 
+                            (input)= "onPasswordChange()"
+                            [ngModelOptions]="{standalone: true}"
+                            placeholder="Nhập mật khẩu đã tạo"
+                            id="retyPassword" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group my-2">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" required
+                            [(ngModel)] = "fullName" 
+                            [ngModelOptions]="{standalone: true}"
+                            id="fullname" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group my-2">
+                    <label for="date-of-birth">Ngày tháng năm sinh</label>
+                    <input type="date" 
+                            [(ngModel)] = "dateOfBirth"
+                            (input) = "onDateOfBirthChange()" 
+                            [ngModelOptions]="{standalone: true}"
+                            id="date-of-birth" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group my-2">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" 
+                            [(ngModel)] = "address" 
+                            [ngModelOptions]="{standalone: true}"
+                            id="address" 
+                            class="form-control mt-2">
+                </div>
+                <div class="form-group">
+                    <div class="form-check my-2">
+                        <span style="display: flex;">
+                            <input type="checkbox"
+                            [(ngModel)] = "isActive"
+                            [ngModelOptions]="{standalone: true}"
+                            class="form-check-input" 
+                            id="agree">
+                            <label for="agree" class="form-check-label text-start">Tôi đồng ý với các điều khoản và điều kiện</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="row text-center my-2">
+                    <button class="btn btn-primary"
+                            (click) = "register()">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="text-center mt-3">
+                    Bạn có tài khoản rồi? <button class="btn btn-outline-secondary">Đăng nhập</button>
+                </div>
+            </form>
         </div>
     </div>
+    
 </div>
 
 <app-footer></app-footer>

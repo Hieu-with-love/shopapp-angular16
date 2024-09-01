@@ -9,6 +9,9 @@ import { OrderComponent } from './order/order.component';
 import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';
+// To use ngModel, we need to import FormsModules
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,19 +21,22 @@ import { RegisterComponent } from './register/register.component';
     OrderComponent,
     OrderConfirmComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DetailProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [
-    HomeComponent
+    //HomeComponent
     //OrderComponent
     //OrderConfirmComponent
     //LoginComponent
-    //RegisterComponent
+    RegisterComponent
+    //DetailProductComponent
   ]
 })
 export class AppModule { }
